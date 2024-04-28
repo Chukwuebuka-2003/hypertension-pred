@@ -8,7 +8,6 @@ model = joblib.load('logistic_model.sav')
 
 # Function to preprocess input data
 def preprocess_data(input_data):
-    
     # Label encoding for categorical variables
     label_encoder = LabelEncoder()
     for column in input_data.columns:
